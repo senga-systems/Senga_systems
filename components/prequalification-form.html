@@ -1,0 +1,154 @@
+<!-- Pre-Qualification Form Component -->
+<!-- Include this in your contact section -->
+
+<div class="prequalification-form-wrapper">
+    <form id="prequalification-form" class="prequalification-form">
+        <div class="form-section">
+            <label for="concern" class="form-label">What's your biggest security concern?</label>
+            <select id="concern" name="concern" required class="form-select">
+                <option value="">-- Select --</option>
+                <option value="data-breach">Data breach prevention</option>
+                <option value="compliance">Regulatory compliance (GDPR, POPIA, etc.)</option>
+                <option value="access-control">Access control & identity management</option>
+                <option value="infrastructure">Infrastructure security</option>
+                <option value="incident-response">Incident response & recovery</option>
+                <option value="general">Just exploring options</option>
+            </select>
+        </div>
+        
+        <div class="form-section">
+            <label for="size" class="form-label">How many employees?</label>
+            <select id="size" name="size" required class="form-select">
+                <option value="">-- Select --</option>
+                <option value="small">&lt; 50 employees</option>
+                <option value="medium">50 - 500 employees</option>
+                <option value="enterprise">500+ employees</option>
+            </select>
+        </div>
+        
+        <div class="form-section" data-shows="budget">
+            <label for="budget" class="form-label">What's your estimated budget?</label>
+            <select id="budget" name="budget" required class="form-select">
+                <option value="">-- Select --</option>
+                <option value="under-10k">&lt; $10k</option>
+                <option value="10k-50k">$10k - $50k</option>
+                <option value="50k-100k">$50k - $100k</option>
+                <option value="over-100k">$100k+</option>
+                <option value="not-sure">Not sure yet</option>
+            </select>
+        </div>
+        
+        <div class="form-section">
+            <label for="email" class="form-label">Your email (so we know how to reach you)</label>
+            <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                placeholder="you@company.com" 
+                required 
+                class="form-input"
+            >
+        </div>
+        
+        <button type="submit" class="btn btn--primary btn--full form-submit">
+            <span>Get Personalized Recommendation</span>
+            <span class="btn__arrow">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+            </span>
+        </button>
+        
+        <p class="form-disclaimer">
+            We'll assess your fit and show you the best options—no pressure. Takes less than 2 minutes.
+        </p>
+    </form>
+</div>
+
+<style>
+    .prequalification-form-wrapper {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    .prequalification-form {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    
+    .form-section {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .form-label {
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--text-primary);
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+    
+    .form-select,
+    .form-input {
+        padding: 12px 16px;
+        background: var(--bg-tertiary);
+        border: 1px solid var(--border-primary);
+        border-radius: var(--radius-sm);
+        color: var(--text-primary);
+        font-size: 15px;
+        font-family: inherit;
+        transition: var(--transition-base);
+    }
+    
+    .form-select option {
+        background: var(--bg-tertiary);
+        color: var(--text-primary);
+    }
+    
+    .form-select:focus,
+    .form-input:focus {
+        border-color: var(--accent-cyan);
+        background: var(--bg-tertiary);
+        box-shadow: 0 0 0 2px rgba(0, 212, 255, 0.1);
+    }
+    
+    .form-select:hover,
+    .form-input:hover {
+        border-color: var(--border-accent);
+    }
+    
+    .form-submit {
+        margin-top: 12px;
+    }
+    
+    .form-submit:hover .btn__arrow {
+        transform: translateX(4px);
+    }
+    
+    .form-disclaimer {
+        font-size: 12px;
+        color: var(--text-muted);
+        text-align: center;
+        margin-top: 12px;
+    }
+    
+    /* Hidden state for conditional fields */
+    [data-shows].hidden {
+        display: none;
+    }
+    
+    @media (max-width: 640px) {
+        .prequalification-form {
+            gap: 16px;
+        }
+        
+        .form-select,
+        .form-input {
+            font-size: 16px; /* Prevents zoom on iOS */
+        }
+    }
+</style>

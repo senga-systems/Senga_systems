@@ -6,7 +6,6 @@
 // Wait for DOM to be ready
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize all modules
-    Preloader.init();
     Navigation.init();
     ScrollEffects.init();
     CounterAnimation.init();
@@ -55,27 +54,6 @@ const ThemeToggle = {
             if (!localStorage.getItem('theme')) {
                 document.documentElement.setAttribute('data-theme', e.matches ? 'dark' : 'light');
             }
-        });
-    }
-};
-
-/* ============================================
-   PRELOADER
-   ============================================ */
-const Preloader = {
-    init() {
-        const preloader = document.getElementById('preloader');
-        
-        window.addEventListener('load', () => {
-            setTimeout(() => {
-                preloader.classList.add('loaded');
-                document.body.style.overflow = 'visible';
-                
-                // Remove preloader from DOM after animation
-                setTimeout(() => {
-                    preloader.remove();
-                }, 500);
-            }, 1500);
         });
     }
 };
@@ -439,8 +417,8 @@ const FormHandler = {
             // Show success message
             this.showNotification(
                 formType === 'audit' 
-                    ? 'Thank you! We\'ll send your security health check within 24 hours.'
-                    : 'Message sent successfully! We\'ll get back to you soon.',
+                    ? 'Perfect! Our team will call you by EOD tomorrow. <a href="#" style="color: var(--accent-cyan); text-decoration: underline;">Learn what to expect →</a>'
+                    : 'Great! We&apos;ve got your request. Someone will reach out within 24 hours.',
                 'success'
             );
             
