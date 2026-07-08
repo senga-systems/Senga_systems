@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120">
+  <defs>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:0.8"/>
+      <stop offset="100%" style="stop-color:#00ff88;stop-opacity:0.8"/>
+    </linearGradient>
+    <linearGradient id="innerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0f"/>
+      <stop offset="100%" style="stop-color:#12121a"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Shield outline -->
+  <path d="M50 5 L95 25 L95 55 C95 85 50 115 50 115 C50 115 5 85 5 55 L5 25 Z" 
+        fill="url(#innerGrad)" 
+        stroke="url(#shieldGrad)" 
+        stroke-width="3"/>
+  
+  <!-- Inner shield -->
+  <path d="M50 15 L85 32 L85 52 C85 77 50 102 50 102 C50 102 15 77 15 52 L15 32 Z" 
+        fill="none" 
+        stroke="#00d4ff" 
+        stroke-width="1" 
+        stroke-opacity="0.5"/>
+  
+  <!-- S letter -->
+  <text x="50" y="70" 
+        text-anchor="middle" 
+        font-family="Inter, Arial, sans-serif" 
+        font-size="45" 
+        font-weight="bold" 
+        fill="url(#shieldGrad)">S</text>
+</svg>

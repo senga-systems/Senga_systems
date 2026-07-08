@@ -5,9 +5,10 @@
   "type": "module",
   "main": "index-new.html",
   "scripts": {
-    "build": "tsc && npm run minify",
+    "build": "npm run build:ts && npm run build:copy",
+    "build:ts": "tsc",
+    "build:copy": "mkdir -p public && cp index-new.html public/index.html && cp compliance-audit.html public/ && cp -r css public/ && cp -r js public/ && cp -r assets public/ 2>/dev/null || true",
     "build:watch": "tsc --watch",
-    "minify": "echo 'Minification can be added with esbuild or terser'",
     "dev": "tsc --watch --sourceMap",
     "type-check": "tsc --noEmit",
     "type-check:watch": "tsc --noEmit --watch"
