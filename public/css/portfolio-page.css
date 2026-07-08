@@ -1,0 +1,418 @@
+/* ============================================
+   SENGA SYSTEMS - Portfolio Page Styles
+   ============================================ */
+
+/* Project Hero */
+.project-hero {
+    padding: 140px 0 60px;
+    background: var(--bg-primary);
+    position: relative;
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-secondary);
+    font-size: 14px;
+    margin-bottom: 32px;
+    transition: var(--transition-base);
+}
+
+.back-link:hover {
+    color: var(--accent-cyan);
+    transform: translateX(-5px);
+}
+
+.project-hero__content {
+    max-width: 800px;
+}
+
+.project-category {
+    display: inline-block;
+    padding: 6px 16px;
+    background: rgba(0, 212, 255, 0.1);
+    border: 1px solid rgba(0, 212, 255, 0.2);
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--accent-cyan);
+    margin-bottom: 20px;
+}
+
+.project-hero__content h1 {
+    font-size: 48px;
+    font-weight: 800;
+    color: var(--text-primary);
+    margin-bottom: 16px;
+}
+
+.project-subtitle {
+    font-size: 20px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 32px;
+}
+
+.project-meta {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.meta-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.meta-label {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-muted);
+}
+
+.meta-value {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+/* Project Overview */
+.project-overview {
+    padding: 80px 0;
+    background: var(--bg-secondary);
+}
+
+.overview-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.overview-content h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 20px;
+}
+
+.overview-content h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 32px 0 16px;
+}
+
+.overview-content p {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: 16px;
+}
+
+.overview-content ul {
+    margin-left: 0;
+}
+
+.overview-content li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    color: var(--text-secondary);
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+.overview-content li::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: var(--accent-green);
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-top: 8px;
+}
+
+.project-image-placeholder {
+    width: 100%;
+    aspect-ratio: 4/3;
+    background: var(--bg-glass);
+    border: 1px solid var(--border-primary);
+    border-radius: var(--radius-lg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    color: var(--text-muted);
+}
+
+.project-image-placeholder svg {
+    color: var(--accent-cyan);
+    opacity: 0.5;
+}
+
+.project-image-placeholder span {
+    font-size: 14px;
+}
+
+/* Approach Section */
+.project-approach {
+    padding: 80px 0;
+    background: var(--bg-primary);
+}
+
+.approach-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.approach-card {
+    padding: 32px;
+    background: var(--bg-glass);
+    border: 1px solid var(--border-primary);
+    border-radius: var(--radius-lg);
+    transition: var(--transition-base);
+}
+
+.approach-card:hover {
+    border-color: var(--accent-cyan);
+    transform: translateY(-4px);
+}
+
+.approach-number {
+    font-size: 48px;
+    font-weight: 800;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 16px;
+}
+
+.approach-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 12px;
+}
+
+.approach-card p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+/* Results Section */
+.project-results {
+    padding: 80px 0;
+    background: var(--bg-secondary);
+}
+
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.result-card {
+    padding: 40px 24px;
+    background: var(--bg-glass);
+    border: 1px solid var(--border-primary);
+    border-radius: var(--radius-lg);
+    text-align: center;
+}
+
+.result-value {
+    font-size: 48px;
+    font-weight: 800;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 8px;
+}
+
+.result-label {
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
+/* Testimonial */
+.testimonial-card {
+    margin-top: 60px;
+    padding: 48px;
+    background: var(--bg-glass);
+    border: 1px solid var(--border-primary);
+    border-radius: var(--radius-xl);
+    position: relative;
+}
+
+.quote-icon {
+    position: absolute;
+    top: 32px;
+    left: 32px;
+    color: var(--accent-cyan);
+}
+
+blockquote {
+    font-size: 20px;
+    font-style: italic;
+    color: var(--text-primary);
+    line-height: 1.8;
+    margin: 0 0 24px;
+    padding-left: 60px;
+}
+
+.testimonial-author {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding-left: 60px;
+}
+
+.author-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.author-title {
+    font-size: 14px;
+    color: var(--text-muted);
+}
+
+/* Project CTA */
+.project-cta {
+    padding: 80px 0;
+    background: var(--bg-primary);
+}
+
+.project-cta .cta-card {
+    background: var(--gradient-dark);
+    border: 1px solid var(--border-primary);
+    border-radius: var(--radius-xl);
+    padding: 60px;
+    text-align: center;
+}
+
+.project-cta .cta-card h2 {
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--text-primary);
+    margin-bottom: 16px;
+}
+
+.project-cta .cta-card p {
+    font-size: 18px;
+    color: var(--text-secondary);
+    margin-bottom: 32px;
+}
+
+.cta-actions {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+/* Footer Links Inline */
+.footer__links-inline {
+    display: flex;
+    gap: 24px;
+}
+
+.footer__links-inline a {
+    color: var(--text-secondary);
+    font-size: 14px;
+    transition: var(--transition-base);
+}
+
+.footer__links-inline a:hover {
+    color: var(--accent-cyan);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .project-hero__content h1 {
+        font-size: 36px;
+    }
+    
+    .overview-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .approach-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .results-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .project-hero {
+        padding: 120px 0 40px;
+    }
+    
+    .project-hero__content h1 {
+        font-size: 28px;
+    }
+    
+    .project-meta {
+        gap: 24px;
+    }
+    
+    .approach-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .results-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    blockquote {
+        font-size: 16px;
+        padding-left: 0;
+    }
+    
+    .quote-icon {
+        position: static;
+        margin-bottom: 16px;
+    }
+    
+    .testimonial-author {
+        padding-left: 0;
+    }
+    
+    .cta-actions {
+        flex-direction: column;
+    }
+    
+    .cta-actions .btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .results-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .result-value {
+        font-size: 36px;
+    }
+    
+    .testimonial-card {
+        padding: 24px;
+    }
+    
+    .project-cta .cta-card {
+        padding: 40px 24px;
+    }
+}

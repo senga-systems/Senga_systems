@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Senga Systems - Enterprise cybersecurity and software engineering solutions for African financial institutions and global businesses.">
+    <meta name="theme-color" content="#0a0a0f">
+    <title>Senga Systems - Enterprise Security & Engineering</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header>
+        <div class="container">
+            <div class="header-container">
+                <a href="#" class="logo">
+                    <span>S</span>
+                    <span>Senga</span>
+                </a>
+                
+                <nav class="nav">
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#why-us">Why Us</a></li>
+                    <li><a href="#case-studies">Case Studies</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </nav>
+
+                <button class="menu-toggle" id="menuToggle">☰</button>
+                <a href="#contact" class="btn btn-primary btn-sm">Start Free Assessment</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">We Find What Criminals Can See</h1>
+                <p class="hero-subtitle">
+                    Your business isn't secure by accident. In 90 days, we'll discover vulnerabilities, 
+                    prioritize by risk, and eliminate threats before attackers find them.
+                </p>
+                <div class="hero-cta">
+                    <button class="btn btn-primary btn-lg" onclick="document.getElementById('contactModal').classList.add('active')">
+                        Get a Free Risk Assessment
+                    </button>
+                    <a href="#services" class="btn btn-secondary btn-lg">Explore Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-subtitle">Comprehensive security and software solutions tailored to your business</p>
+            
+            <div class="feature-grid mt-4xl">
+                <!-- Service 1: Penetration Testing -->
+                <div class="card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 15h6"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Penetration Testing</h3>
+                    <p class="feature-description">
+                        Comprehensive security assessments across infrastructure, applications, and human factors. Detailed findings report + 30-day remediation support.
+                    </p>
+                    <a href="#contact" class="btn btn-secondary btn-sm mt-lg">Learn More</a>
+                </div>
+
+                <!-- Service 2: Compliance Audit -->
+                <div class="card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Compliance Audit</h3>
+                    <p class="feature-description">
+                        Specialized audits for African financial institutions. Map findings to local regulations, prioritize fixes by risk, execute 90-day remediation sprints.
+                    </p>
+                    <a href="compliance-audit.html" class="btn btn-secondary btn-sm mt-lg">Learn More</a>
+                </div>
+
+                <!-- Service 3: Incident Response -->
+                <div class="card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8m3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Incident Response</h3>
+                    <p class="feature-description">
+                        24/7 rapid-response security. Post-breach containment, forensics, communications, and recovery within 48 hours. Retainer + on-call support.
+                    </p>
+                    <a href="#contact" class="btn btn-secondary btn-sm mt-lg">Learn More</a>
+                </div>
+
+                <!-- Service 4: DevSecOps -->
+                <div class="card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">DevSecOps Enablement</h3>
+                    <p class="feature-description">
+                        8-week security sprint for startups and enterprises. Champions training, CI/CD hardening, custom security checklist. Fixed pricing.
+                    </p>
+                    <a href="#contact" class="btn btn-secondary btn-sm mt-lg">Learn More</a>
+                </div>
+
+                <!-- Service 5: Custom Software -->
+                <div class="card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="12 3 20 7.5 20 16.5 12 21 4 16.5 4 7.5 12 3"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Custom Development</h3>
+                    <p class="feature-description">
+                        Secure, scalable software engineering. Full-stack applications, mobile apps, and data platforms built with security-first architecture.
+                    </p>
+                    <a href="#contact" class="btn btn-secondary btn-sm mt-lg">Learn More</a>
+                </div>
+
+                <!-- Service 6: Data & AI -->
+                <div class="card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Data & AI Solutions</h3>
+                    <p class="feature-description">
+                        Data warehousing, analytics pipelines, and secure AI implementations. Turn data into strategic advantage with privacy-first design.
+                    </p>
+                    <a href="#contact" class="btn btn-secondary btn-sm mt-lg">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us Section -->
+    <section id="why-us">
+        <div class="container">
+            <h2 class="section-title">Why Senga Systems</h2>
+            <p class="section-subtitle">We combine ruthless expertise with transparent partnership</p>
+            
+            <div class="feature-grid mt-4xl">
+                <div class="feature-card text-center">
+                    <div style="font-size: 48px; margin-bottom: var(--space-lg);">90</div>
+                    <h3 class="feature-title">Day Results</h3>
+                    <p class="feature-description">
+                        Fixed-price engagements with concrete outcomes. Most compliance audits complete and remediation begins within 90 days.
+                    </p>
+                </div>
+
+                <div class="feature-card text-center">
+                    <div style="font-size: 48px; margin-bottom: var(--space-lg);">92%</div>
+                    <h3 class="feature-title">Avg Reduction</h3>
+                    <p class="feature-description">
+                        Critical vulnerabilities eliminated across our client base. Verified results through follow-up audits and ongoing monitoring.
+                    </p>
+                </div>
+
+                <div class="feature-card text-center">
+                    <div style="font-size: 48px; margin-bottom: var(--space-lg);">48H</div>
+                    <h3 class="feature-title">Response Time</h3>
+                    <p class="feature-description">
+                        Post-breach incident response with guaranteed 48-hour SLA. Containment, forensics, and preliminary recovery in first 2 days.
+                    </p>
+                </div>
+
+                <div class="feature-card text-center">
+                    <div style="font-size: 48px; margin-bottom: var(--space-lg);">15+</div>
+                    <h3 class="feature-title">Years Combined</h3>
+                    <p class="feature-description">
+                        Deep expertise across Fortune 500 companies, African startups, and financial institutions. We've seen every attack vector.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section id="case-studies">
+        <div class="container">
+            <h2 class="section-title">Case Studies</h2>
+            <p class="section-subtitle">Real results from real businesses</p>
+
+            <div class="grid grid-cols-1 gap-2xl mt-4xl">
+                <!-- Case Study 1 -->
+                <div class="card card-lg">
+                    <div class="card-header">
+                        <h3 style="margin: 0; margin-bottom: var(--space-md);">East Africa Bank: 90-Day Compliance Sprint</h3>
+                        <p class="text-sm text-secondary" style="margin: 0;">Financial Services | Sub-Saharan Africa</p>
+                    </div>
+                    <div class="card-body">
+                        <div class="mb-lg">
+                            <strong style="color: var(--color-text-primary);">Challenge</strong>
+                            <p>Legacy infrastructure with 47 critical regulatory violations. National banking authority required remediation in 120 days or operational license suspension.</p>
+                        </div>
+                        <div class="mb-lg">
+                            <strong style="color: var(--color-text-primary);">Solution</strong>
+                            <p>Comprehensive audit mapped all violations to local regulations. Prioritized 12 critical fixes. Executed 90-day remediation sprint with daily standups and weekly executive briefings.</p>
+                        </div>
+                        <div>
+                            <strong style="color: var(--color-text-primary);">Results</strong>
+                            <ul style="margin-left: var(--space-lg); margin-top: var(--space-md);">
+                                <li>47 violations → 3 (audit closure within 90 days)</li>
+                                <li>$1.2M regulator fines avoided</li>
+                                <li>License renewed with zero conditions</li>
+                                <li>Ongoing quarterly monitoring contract initiated</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study 2 -->
+                <div class="card card-lg">
+                    <div class="card-header">
+                        <h3 style="margin: 0; margin-bottom: var(--space-md);">African Fintech: Breach Response & Recovery</h3>
+                        <p class="text-sm text-secondary" style="margin: 0;">FinTech | Multi-Country</p>
+                    </div>
+                    <div class="card-body">
+                        <div class="mb-lg">
+                            <strong style="color: var(--color-text-primary);">Challenge</strong>
+                            <p>Ransomware attack compromised customer data for 50k users. 48 hours to containment or potential regulatory fines and customer litigation.</p>
+                        </div>
+                        <div class="mb-lg">
+                            <strong style="color: var(--color-text-primary);">Solution</strong>
+                            <p>Rapid incident response deployed within 2 hours. Live forensics identified attack vector (compromised API key). Contained threat, recovered systems, notified regulators within SLA.</p>
+                        </div>
+                        <div>
+                            <strong style="color: var(--color-text-primary);">Results</strong>
+                            <ul style="margin-left: var(--space-lg); margin-top: var(--space-md);">
+                                <li>Full containment in 6 hours</li>
+                                <li>Customer communication completed in 18 hours</li>
+                                <li>Zero regulatory fines (proactive notification)</li>
+                                <li>Customer retention: 94% (vs 60% industry avg post-breach)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study 3 -->
+                <div class="card card-lg">
+                    <div class="card-header">
+                        <h3 style="margin: 0; margin-bottom: var(--space-md);">Enterprise: Penetration Testing Program</h3>
+                        <p class="text-sm text-secondary" style="margin: 0;">Enterprise | Multi-Sector</p>
+                    </div>
+                    <div class="card-body">
+                        <div class="mb-lg">
+                            <strong style="color: var(--color-text-primary);">Challenge</strong>
+                            <p>Large enterprise needed security validation across infrastructure, web apps, and physical access. 200+ systems in scope.</p>
+                        </div>
+                        <div class="mb-lg">
+                            <strong style="color: var(--color-text-primary);">Solution</strong>
+                            <p>Comprehensive 8-week penetration testing engagement. Network scanning, app testing, social engineering, physical security. Prioritized 120 findings by exploitability and impact.</p>
+                        </div>
+                        <div>
+                            <strong style="color: var(--color-text-primary);">Results</strong>
+                            <ul style="margin-left: var(--space-lg); margin-top: var(--space-md);">
+                                <li>120 vulnerabilities identified (18 critical, 34 high)</li>
+                                <li>92% remediation rate within 60 days post-report</li>
+                                <li>Follow-up assessment showed significant security posture improvement</li>
+                                <li>Ongoing annual penetration testing contract secured</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section style="background-color: var(--color-bg-secondary); text-align: center; padding: var(--space-5xl) 0;">
+        <div class="container">
+            <h2 class="section-title">Ready to Transform Your Security?</h2>
+            <p class="section-subtitle" style="max-width: 700px;">
+                Schedule a free 15-minute risk assessment. No credit card required.
+                Our experts will evaluate your security posture and recommend next steps.
+            </p>
+            <button class="btn btn-primary btn-lg mt-2xl" onclick="document.getElementById('contactModal').classList.add('active')">
+                Get Your Free Assessment
+            </button>
+        </div>
+    </section>
+
+    <!-- Contact/Pre-Qualification Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Free Risk Assessment</h2>
+                <button class="modal-close" onclick="document.getElementById('contactModal').classList.remove('active')">&times;</button>
+            </div>
+            <div class="modal-body" id="qualificationForm">
+                <!-- Form will be injected by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#team">Our Team</a></li>
+                        <li><a href="#careers">Careers</a></li>
+                        <li><a href="#press">Press</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#services">All Services</a></li>
+                        <li><a href="compliance-audit.html">Compliance Audit</a></li>
+                        <li><a href="#contact">Incident Response</a></li>
+                        <li><a href="#contact">Custom Development</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#guides">Security Guides</a></li>
+                        <li><a href="#checklists">Compliance Checklists</a></li>
+                        <li><a href="#support">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <ul class="footer-links">
+                        <li><a href="mailto:hello@senga.systems">Email Us</a></li>
+                        <li><a href="#linkedin">LinkedIn</a></li>
+                        <li><a href="#twitter">Twitter</a></li>
+                        <li><a href="#github">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">&copy; 2026 Senga Systems. All rights reserved.</p>
+                <div style="display: flex; gap: var(--space-lg);">
+                    <a href="#privacy" style="color: var(--color-text-secondary); font-size: var(--font-size-sm); text-decoration: none;">Privacy Policy</a>
+                    <a href="#terms" style="color: var(--color-text-secondary); font-size: var(--font-size-sm); text-decoration: none;">Terms of Service</a>
+                    <a href="#security" style="color: var(--color-text-secondary); font-size: var(--font-size-sm); text-decoration: none;">Security</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/pre-qualification.js"></script>
+    <script src="js/navigation.js"></script>
+</body>
+</html>

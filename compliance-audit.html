@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Compliance Audit for African Banks - Senga Systems. Find and fix audit violations in 90 days. GDPR, POPIA, AfCFTA compliant.">
+    <meta name="keywords" content="bank compliance, GDPR, POPIA, AfCFTA, regulatory audit, cybersecurity, African banks, Malawi">
+    
+    <title>Compliance Audit for African Banks | Senga Systems</title>
+    
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/compliance-audit.css">
+    
+    <script>
+        (function() {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme) {
+                document.documentElement.setAttribute('data-theme', savedTheme);
+            } else if (!window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                document.documentElement.setAttribute('data-theme', 'light');
+            }
+        })();
+    </script>
+</head>
+<body>
+    <!-- Navigation (Simplified) -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 50 60" class="logo-shield">
+                        <path d="M25 2 L48 12 L48 28 C48 48 25 58 25 58 C25 58 2 48 2 28 L2 12 Z" fill="url(#logoGradient)" stroke="var(--accent-cyan)" stroke-width="1.5"/>
+                        <defs>
+                            <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:rgba(0,212,255,0.2)"/>
+                                <stop offset="100%" style="stop-color:rgba(0,212,255,0.2)"/>
+                            </linearGradient>
+                        </defs>
+                        <text x="25" y="38" text-anchor="middle" fill="var(--accent-cyan)" font-size="18" font-weight="bold" font-family="Inter">S</text>
+                    </svg>
+                </div>
+                <span class="logo-text">Senga<span class="logo-highlight">Systems</span></span>
+            </a>
+            
+            <div class="nav__actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <svg class="theme-icon theme-icon--light" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                    </svg>
+                    <svg class="theme-icon theme-icon--dark" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                    </svg>
+                </button>
+                <a href="index.html" class="btn btn--outline btn--nav">Back to Home</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero-audit" id="hero">
+            <div class="hero__bg">
+                <div class="hero__grid"></div>
+            </div>
+            
+            <div class="hero__content container">
+                <div class="hero__badge">
+                    <span class="badge__icon">🏦</span>
+                    <span>Compliance Specialists for African Banks</span>
+                </div>
+                
+                <h1 class="hero__title">
+                    <span class="title__line">Why African Banks Fail</span>
+                    <span class="title__line title__line--gradient">Regulatory Audits—And How We Fix It</span>
+                </h1>
+                
+                <p class="hero__subtitle">
+                    Regulatory enforcement is tightening across Africa. New GDPR requirements, POPIA compliance,
+                    and AfCFTA standards create compliance gaps that regulators penalize with fines up to $2.8M.
+                    In 90 days, we'll audit your infrastructure, identify violations, and implement fixes—with
+                    live dashboards showing your progress to regulators.
+                </p>
+                
+                <div class="hero__cta">
+                    <a href="#consultation" class="btn btn--primary btn--lg">Get Your Free Compliance Assessment</a>
+                </div>
+                
+                <div class="hero__stats audit-stats">
+                    <div class="stat-box">
+                        <div class="stat-number">92%</div>
+                        <div class="stat-label">Violation Reduction in 90 Days</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">Regulatory Frameworks Covered</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">$0</div>
+                        <div class="stat-label">Regulator Fines Post-Audit</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Problem -->
+        <section class="audit-section" id="problem">
+            <div class="container">
+                <h2 class="section__title">The Reality: Most African Banks Are Non-Compliant</h2>
+                <p class="section__subtitle">
+                    Regulators now expect what global banks have for years. Without localized expertise, 
+                    compliance efforts miss critical gaps.
+                </p>
+                
+                <div class="problem-grid">
+                    <div class="problem-card">
+                        <div class="problem-card__number">1</div>
+                        <h3>Fragmented Compliance</h3>
+                        <p>Audit teams follow general GDPR guidelines without understanding local banking regulations (POPIA, national standards). Result: critical violations missed.</p>
+                    </div>
+                    
+                    <div class="problem-card">
+                        <div class="problem-card__number">2</div>
+                        <h3>No Risk Prioritization</h3>
+                        <p>Audit reports list 50+ findings. Banks prioritize by convenience, not regulatory risk. High-risk items stay unfixed; regulators see this and penalize.</p>
+                    </div>
+                    
+                    <div class="problem-card">
+                        <div class="problem-card__number">3</div>
+                        <h3>No Evidence Trail</h3>
+                        <p>Fixes are made, but regulators have no proof they&apos;re complete. Without live dashboards, banks waste time re-proving compliance in every inspection.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Solution -->
+        <section class="audit-section" id="solution">
+            <div class="container">
+                <h2 class="section__title">Our 90-Day Compliance Sprint</h2>
+                <p class="section__subtitle">A turnkey engagement designed for Sub-Saharan banks.</p>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker">Week 1</div>
+                        <div class="timeline-content">
+                            <h4>Regulatory Audit</h4>
+                            <p>We map your infrastructure against GDPR, POPIA, and local banking standards. Infrastructure scans + document review. Deliverable: detailed findings report.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker">Week 2–3</div>
+                        <div class="timeline-content">
+                            <h4>Risk Prioritization</h4>
+                            <p>We rank findings by regulatory impact (critical → medium → low). You fix high-impact items first. Regulator will see these improvements immediately.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker">Week 4–12</div>
+                        <div class="timeline-content">
+                            <h4>Remediation Support</h4>
+                            <p>Your team executes fixes. We provide weekly guidance, configuration reviews, and sign-offs. Live dashboard tracks progress for regulators.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker">Day 90</div>
+                        <div class="timeline-content">
+                            <h4>Compliance Sign-Off</h4>
+                            <p>Final audit confirms all critical violations resolved. Regulator-ready documentation provided. You are now audit-proof (for 12 months).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Case Study / Outcome -->
+        <section class="audit-section" id="outcome">
+            <div class="container">
+                <h2 class="section__title">What Results Look Like</h2>
+                
+                <div class="outcome-cards">
+                    <div class="outcome-card">
+                        <div class="outcome-icon">📊</div>
+                        <h3>Audit Finding Reduction</h3>
+                        <p><strong>Before:</strong> 47 compliance violations (12 critical)<br/><strong>After:</strong> 4 violations (0 critical)<br/><strong>Impact:</strong> 92% reduction, zero fines</p>
+                    </div>
+                    
+                    <div class="outcome-card">
+                        <div class="outcome-icon">⏱️</div>
+                        <h3>Time to Compliance</h3>
+                        <p><strong>Typical effort:</strong> 6–12 months for in-house team<br/><strong>With Senga:</strong> 90 days, guaranteed<br/><strong>Benefit:</strong> Regulator inspection in Month 4, you&apos;re ready</p>
+                    </div>
+                    
+                    <div class="outcome-card">
+                        <div class="outcome-icon">💰</div>
+                        <h3>Cost of Non-Compliance</h3>
+                        <p><strong>Typical fine:</strong> $500k–$2.8M per violation<br/><strong>Our cost:</strong> Fixed $45k sprint (bank size dependent)<br/><strong>ROI:</strong> Pays for itself in 1–2 violations avoided</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Us -->
+        <section class="audit-section" id="why-us">
+            <div class="container">
+                <h2 class="section__title">Why Senga Systems</h2>
+                
+                <div class="why-grid">
+                    <div class="why-card">
+                        <h3>Localized Expertise</h3>
+                        <p>We understand Sub-Saharan banking regulations (POPIA, AfCFTA, national standards) that generic consultants miss.</p>
+                    </div>
+                    
+                    <div class="why-card">
+                        <h3>Fixed-Price Model</h3>
+                        <p>$45k–$90k (based on bank size). No hourly billing, no surprise costs. Faster execution = lower cost.</p>
+                    </div>
+                    
+                    <div class="why-card">
+                        <h3>90-Day Guarantee</h3>
+                        <p>We commit to timeline. If we miss milestones, we continue work at no charge until compliance is certified.</p>
+                    </div>
+                    
+                    <div class="why-card">
+                        <h3>Regulator-Ready Output</h3>
+                        <p>Live dashboards, detailed remediation logs, and signed compliance certificates—regulators will see you&apos;re serious.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Consultation CTA -->
+        <section class="consultation-cta" id="consultation">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to Get Compliant?</h2>
+                    <p>Let&apos;s talk about your compliance gaps in a free 15-minute call.</p>
+                    
+                    <form id="audit-form" class="audit-form">
+                        <div class="form-group">
+                            <input type="text" name="bank_name" placeholder="Your Bank Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" placeholder="Your Phone Number" required>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--lg">Schedule Consultation</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Senga Systems. All rights reserved. | <a href="index.html">Back to Home</a></p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
