@@ -1,0 +1,28 @@
+{
+  "name": "senga-systems",
+  "version": "2.0.0",
+  "description": "Enterprise cybersecurity and software engineering solutions",
+  "type": "module",
+  "main": "index-new.html",
+  "scripts": {
+    "build": "tsc && npm run minify",
+    "build:watch": "tsc --watch",
+    "minify": "echo 'Minification can be added with esbuild or terser'",
+    "dev": "tsc --watch --sourceMap",
+    "type-check": "tsc --noEmit",
+    "type-check:watch": "tsc --noEmit --watch"
+  },
+  "keywords": [
+    "cybersecurity",
+    "penetration testing",
+    "compliance",
+    "incident response",
+    "DevSecOps"
+  ],
+  "author": "Senga Systems",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {}
+}
