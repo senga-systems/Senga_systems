@@ -4,19 +4,16 @@
  */
 
 // Export all types
-export * from '@types/index';
-
-// Export modules
-export { default as Navigation } from '@modules/navigation';
-export { default as Auth } from '@modules/auth';
-export { default as PreQualification } from '@modules/pre-qualification';
-export { default as EmailService } from '@modules/email';
+export type * from './types/index';
 
 // Module imports for easier referencing
 import Navigation from '@modules/navigation';
 import Auth from '@modules/auth';
 import PreQualification from '@modules/pre-qualification';
 import EmailService from '@modules/email';
+
+// Export modules
+export { Navigation, Auth, PreQualification, EmailService };
 
 // Create global namespace
 declare global {

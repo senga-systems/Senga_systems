@@ -3,7 +3,7 @@
  * Handles email sending via SendGrid with retry logic
  */
 
-import type { EmailMessage, ApiResponse } from '@types/index';
+import type { EmailMessage, ApiResponse } from '../types/index';
 
 interface EmailServiceConfig {
   apiEndpoint: string;

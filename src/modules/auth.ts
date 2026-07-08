@@ -3,7 +3,7 @@
  * Handles user authentication state and session management
  */
 
-import type { User, AuthState } from '@types/index';
+import type { User, AuthState } from '../types/index';
 
 interface AuthConfig {
   storageKey: string;

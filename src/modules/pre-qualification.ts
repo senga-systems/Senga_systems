@@ -8,7 +8,7 @@ import type {
   ConsultationFitScore,
   Notification,
   ApiResponse,
-} from '@types/index';
+} from '../types/index';
 
 interface QualificationConfig {
   formId: string;
