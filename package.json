@@ -1,29 +1,30 @@
 {
   "name": "senga-systems",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Enterprise cybersecurity and software engineering solutions",
-  "type": "module",
-  "main": "index-new.html",
+  "private": true,
   "scripts": {
-    "build": "npm run build:ts && npm run build:copy",
-    "build:ts": "tsc",
-    "build:copy": "mkdir -p public && cp index-new.html public/index.html && cp compliance-audit.html public/ && cp -r css public/ && cp -r js public/ && cp -r assets public/ 2>/dev/null || true",
-    "build:watch": "tsc --watch",
-    "dev": "tsc --watch --sourceMap",
-    "type-check": "tsc --noEmit",
-    "type-check:watch": "tsc --noEmit --watch"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "keywords": [
-    "cybersecurity",
-    "penetration testing",
-    "compliance",
-    "incident response",
-    "DevSecOps"
-  ],
-  "author": "Senga Systems",
-  "license": "MIT",
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "next": "^16.0.0",
+    "typescript": "^5.6.3",
+    "tailwindcss": "^4.0.0",
+    "@tailwindcss/typography": "^0.5.15",
+    "clsx": "^2.1.1",
+    "class-variance-authority": "^0.7.1",
+    "lucide-react": "latest"
+  },
   "devDependencies": {
-    "typescript": "^5.3.3"
-  },
-  "dependencies": {}
+    "@types/node": "^20",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "eslint": "^9",
+    "eslint-config-next": "^16.0.0"
+  }
 }
