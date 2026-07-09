@@ -3,70 +3,72 @@ import { ArrowRight, Shield, Zap } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center pt-20 px-4 overflow-hidden">
-      {/* Background Grid */}
-      <div className="absolute inset-0 opacity-10">
+    <section className="relative min-h-screen flex items-center justify-center pt-32 px-4 overflow-hidden">
+      {/* Animated Background Elements */}
+      <div className="absolute inset-0 opacity-5">
         <div
-          className="absolute inset-0"
+          className="absolute inset-0 animate-pulse"
           style={{
             backgroundImage: 'linear-gradient(90deg, var(--color-primary) 1px, transparent 1px), linear-gradient(var(--color-primary) 1px, transparent 1px)',
-            backgroundSize: '50px 50px',
+            backgroundSize: '60px 60px',
           }}
         />
       </div>
 
-      {/* Gradient Blobs */}
-      <div className="absolute top-20 right-10 w-72 h-72 bg-primary opacity-20 rounded-full blur-3xl" />
-      <div className="absolute bottom-20 left-10 w-72 h-72 bg-accent opacity-20 rounded-full blur-3xl" />
+      {/* Premium Gradient Blobs */}
+      <div className="absolute top-32 right-20 w-96 h-96 bg-primary opacity-15 rounded-full blur-3xl animate-blob" />
+      <div className="absolute -bottom-20 -left-20 w-96 h-96 bg-accent opacity-10 rounded-full blur-3xl animate-blob animation-delay-2000" />
+      <div className="absolute top-1/2 left-1/3 w-72 h-72 bg-accent-secondary opacity-5 rounded-full blur-3xl animate-blob animation-delay-4000" />
 
       {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto text-center">
-        <div className="mb-6 inline-block">
-          <div className="flex items-center gap-2 bg-secondary/50 backdrop-blur border border-primary/20 rounded-full px-4 py-2 text-sm">
-            <Shield size={16} className="text-primary" />
-            <span className="text-foreground/80">Enterprise-Grade Security Solutions</span>
+        <div className="mb-8 inline-block">
+          <div className="flex items-center gap-2 bg-tertiary/60 backdrop-blur-lg border border-primary/30 rounded-full px-5 py-2.5 text-sm font-medium hover:border-primary/50 transition-all">
+            <Shield size={18} className="text-primary" />
+            <span className="text-foreground/90">Enterprise Security Reimagined</span>
           </div>
         </div>
 
-        <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-          <span className="text-foreground">Cybersecurity </span>
-          <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-            You Can Trust
+        <h1 className="text-6xl md:text-7xl lg:text-8xl font-black mb-8 leading-tight">
+          <span className="text-foreground block mb-2">Advanced </span>
+          <span className="bg-gradient-to-r from-primary via-accent to-accent-secondary bg-clip-text text-transparent">
+            Cybersecurity
           </span>
+          <span className="text-foreground block mt-2">You Can Trust</span>
         </h1>
 
-        <p className="text-xl md:text-2xl text-foreground/70 mb-8 max-w-2xl mx-auto leading-relaxed">
-          Protect your enterprise with advanced penetration testing, compliance audits, and incident response services backed by security experts.
+        <p className="text-lg md:text-xl text-muted mb-12 max-w-3xl mx-auto leading-relaxed font-light">
+          Enterprise-grade security solutions including penetration testing, compliance audits, incident response, and DevSecOps—backed by certified security experts.
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+        <div className="flex flex-col sm:flex-row gap-5 justify-center mb-16">
           <Link
             href="/services"
-            className="px-8 py-4 bg-primary text-background rounded-lg font-bold hover:bg-accent transition-all hover:scale-105 flex items-center justify-center gap-2"
+            className="px-8 py-4 bg-gradient-to-r from-primary to-blue-500 text-background rounded-lg font-bold hover:shadow-lg hover:shadow-primary/50 transition-all hover:scale-105 flex items-center justify-center gap-2 group"
           >
-            Explore Services <ArrowRight size={20} />
+            Explore Services <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
           </Link>
           <Link
             href="/contact"
-            className="px-8 py-4 bg-secondary border border-primary text-foreground rounded-lg font-bold hover:bg-primary/10 transition-all flex items-center justify-center gap-2"
+            className="px-8 py-4 bg-tertiary border-2 border-primary/40 text-foreground rounded-lg font-bold hover:border-primary hover:bg-primary/10 transition-all flex items-center justify-center gap-2"
           >
-            Get a Free Consultation <Zap size={20} />
+            Start Free Audit <Zap size={20} />
           </Link>
         </div>
 
         {/* Stats */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-12 border-t border-primary/20">
-          <div>
-            <div className="text-4xl font-bold text-primary mb-2">500+</div>
-            <p className="text-foreground/70">Security Audits Completed</p>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-16 border-t border-primary/10">
+          <div className="text-center group">
+            <div className="text-5xl font-black bg-gradient-to-r from-primary to-blue-500 bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-transform">500+</div>
+            <p className="text-muted text-sm uppercase tracking-wider font-semibold">Security Audits</p>
           </div>
-          <div>
-            <div className="text-4xl font-bold text-primary mb-2">98%</div>
-            <p className="text-foreground/70">Client Satisfaction Rate</p>
+          <div className="text-center group">
+            <div className="text-5xl font-black bg-gradient-to-r from-accent to-accent-secondary bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-transform">98%</div>
+            <p className="text-muted text-sm uppercase tracking-wider font-semibold">Client Satisfaction</p>
           </div>
-          <div>
-            <div className="text-4xl font-bold text-primary mb-2">24/7</div>
-            <p className="text-foreground/70">Incident Response Support</p>
+          <div className="text-center group">
+            <div className="text-5xl font-black bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-transform">24/7</div>
+            <p className="text-muted text-sm uppercase tracking-wider font-semibold">Incident Response</p>
           </div>
         </div>
       </div>

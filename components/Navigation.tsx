@@ -16,26 +16,27 @@ export default function Navigation() {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-secondary/95 backdrop-blur border-b border-primary/20">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-secondary/90 backdrop-blur-lg border-b border-primary/10 shadow-lg shadow-primary/5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
-              <span className="text-background font-bold">S</span>
+          <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
+            <div className="w-9 h-9 bg-gradient-to-br from-primary via-blue-500 to-accent rounded-lg flex items-center justify-center shadow-lg shadow-primary/30 hover:shadow-primary/50 transition-all">
+              <span className="text-background font-black text-lg">S</span>
             </div>
-            <span className="text-xl font-bold text-foreground hidden sm:inline">Senga Systems</span>
+            <span className="text-xl font-bold bg-gradient-to-r from-primary to-blue-400 bg-clip-text text-transparent hidden sm:inline">Senga Systems</span>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex gap-8">
+          <div className="hidden md:flex gap-10">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-foreground/80 hover:text-primary transition-colors text-sm font-medium"
+                className="text-muted hover:text-primary transition-all text-sm font-semibold relative group"
               >
                 {link.label}
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300" />
               </Link>
             ))}
           </div>
@@ -44,7 +45,7 @@ export default function Navigation() {
           <div className="hidden md:block">
             <Link
               href="/contact"
-              className="px-6 py-2 bg-primary text-background rounded-lg font-semibold hover:bg-accent transition-all hover:scale-105"
+              className="px-6 py-2.5 bg-gradient-to-r from-primary to-blue-500 text-background rounded-lg font-semibold hover:shadow-lg hover:shadow-primary/40 transition-all hover:scale-105"
             >
               Get Started
             </Link>

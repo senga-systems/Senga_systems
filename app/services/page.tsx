@@ -72,19 +72,19 @@ export default function Services() {
       <Navigation />
       
       {/* Hero */}
-      <section className="pt-32 pb-20 px-4 bg-gradient-to-b from-secondary to-background">
+      <section className="pt-32 pb-24 px-4 bg-gradient-to-b from-tertiary to-background">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">
-            Enterprise Security Services
+          <h1 className="text-6xl md:text-7xl font-black mb-6 leading-tight">
+            Enterprise Security <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Services</span>
           </h1>
-          <p className="text-xl text-foreground/70 mb-8">
-            Comprehensive solutions tailored to your organization&apos;s unique security challenges
+          <p className="text-lg md:text-xl text-muted mb-8 leading-relaxed">
+            Comprehensive solutions tailored to your organization&apos;s unique security challenges and regulatory requirements
           </p>
         </div>
       </section>
 
       {/* Services Grid */}
-      <section className="py-20 px-4">
+      <section className="py-24 px-4">
         <div className="max-w-6xl mx-auto">
           {servicesDetail.map((service, index) => {
             const Icon = service.icon;
@@ -113,21 +113,21 @@ export default function Services() {
                     ))}
                   </ul>
 
-                  <div className="flex items-center gap-4">
+                  <div className="flex items-center gap-4 flex-wrap">
                     <Link
                       href="/contact"
-                      className="px-6 py-3 bg-primary text-background rounded-lg font-bold hover:bg-accent transition-all"
+                      className="px-8 py-3 bg-gradient-to-r from-primary to-blue-500 text-background rounded-lg font-bold hover:shadow-lg hover:shadow-primary/40 transition-all hover:scale-105"
                     >
                       Get Started
                     </Link>
-                    <span className="text-foreground/60">Starting from: {service.pricing}</span>
+                    <span className="text-muted text-sm font-medium">Starting from: <span className="text-primary">{service.pricing}</span></span>
                   </div>
                 </div>
 
-                <div className={`bg-secondary/50 border border-primary/20 rounded-lg p-12 flex items-center justify-center min-h-96 ${
+                <div className={`bg-gradient-to-br from-tertiary to-secondary/50 border border-primary/20 rounded-2xl p-12 flex items-center justify-center min-h-96 hover:border-primary/40 hover:shadow-lg hover:shadow-primary/10 transition-all group ${
                   index % 2 === 1 ? 'md:col-start-1 md:row-start-1' : ''
                 }`}>
-                  <Icon size={200} className="text-primary/20" />
+                  <Icon size={200} className="text-primary/15 group-hover:text-primary/25 transition-colors" />
                 </div>
               </div>
             );
@@ -136,24 +136,29 @@ export default function Services() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="bg-secondary py-20 px-4">
+      <section className="bg-gradient-to-b from-background to-tertiary py-24 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12">Why Partner With Senga Systems?</h2>
+          <h2 className="text-5xl md:text-6xl font-black text-center mb-4">Why Partner With <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Senga Systems</span>?</h2>
+          <p className="text-center text-muted mb-16 max-w-2xl mx-auto">We combine technical excellence with strategic thinking to deliver measurable security outcomes</p>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-background/50 border border-primary/20 rounded-lg p-8">
-              <Users size={32} className="text-primary mb-4" />
-              <h3 className="text-xl font-bold mb-3">Certified Experts</h3>
-              <p className="text-foreground/70">
-                Our team includes OSCP, CISSP, and other industry-leading certifications
+            <div className="group bg-gradient-to-br from-tertiary to-secondary/50 border border-primary/10 hover:border-primary/30 rounded-2xl p-10 hover:shadow-lg hover:shadow-primary/10 transition-all hover:-translate-y-2">
+              <div className="bg-primary/10 w-14 h-14 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
+                <Users size={28} className="text-primary" />
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-foreground">Certified Experts</h3>
+              <p className="text-muted leading-relaxed">
+                Our team includes OSCP, CISSP, and other industry-leading certifications with decades of combined experience
               </p>
             </div>
 
-            <div className="bg-background/50 border border-primary/20 rounded-lg p-8">
-              <Shield size={32} className="text-primary mb-4" />
-              <h3 className="text-xl font-bold mb-3">Proven Track Record</h3>
-              <p className="text-foreground/70">
-                500+ successful security engagements across Fortune 500 companies
+            <div className="group bg-gradient-to-br from-tertiary to-secondary/50 border border-primary/10 hover:border-primary/30 rounded-2xl p-10 hover:shadow-lg hover:shadow-primary/10 transition-all hover:-translate-y-2">
+              <div className="bg-primary/10 w-14 h-14 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
+                <Shield size={28} className="text-primary" />
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-foreground">Proven Track Record</h3>
+              <p className="text-muted leading-relaxed">
+                500+ successful security engagements across Fortune 500 companies and critical infrastructure sectors
               </p>
             </div>
 
