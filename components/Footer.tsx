@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Mail, Phone, MapPin, Linkedin, Twitter, Code } from 'lucide-react';
+import { Mail, Phone, MapPin, Globe, Share2, Code } from 'lucide-react';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -21,10 +21,10 @@ export default function Footer() {
             </p>
             <div className="flex gap-3">
               <a href="#" className="text-foreground/70 hover:text-primary transition-colors">
-                <Linkedin size={18} />
+                <Globe size={18} />
               </a>
               <a href="#" className="text-foreground/70 hover:text-primary transition-colors">
-                <Twitter size={18} />
+                <Share2 size={18} />
               </a>
               <a href="#" className="text-foreground/70 hover:text-primary transition-colors">
                 <Code size={18} />
