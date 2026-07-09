@@ -8,16 +8,20 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: '#0f1419',
-        foreground: '#f5f5f5',
-        primary: '#00d9ff',
-        secondary: '#1a1f2e',
-        accent: '#ff6b6b',
-        muted: '#6b7280',
+        background: '#050812',
+        foreground: '#f8f9fa',
+        primary: '#00e5ff',
+        secondary: '#0f1625',
+        tertiary: '#1a2339',
+        accent: '#ff4757',
+        'accent-secondary': '#f57f17',
+        muted: '#8892a8',
+        'muted-dark': '#4a5568',
+        success: '#2ecc71',
+        warning: '#f39c12',
       },
-      fontFamily: {
-        sans: ['system-ui', 'sans-serif'],
-        mono: ['ui-monospace', 'monospace'],
+      borderRadius: {
+        DEFAULT: '0.75rem',
       },
     },
   },
